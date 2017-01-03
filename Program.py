@@ -74,6 +74,16 @@ def rectarea(length, width):
 
     print "The area of this rectangle is ", arearounded
 
+def rectlength (area, width):
+
+    length = area / width
+
+    lengthrounded = round(length, 2)
+
+    print "The length is ", lengthrounded
+
+
+
 
 shape = raw_input("What's the shape you working with? (Enter C for circle, T for Triangle, or R for rectangle) \n")
 
