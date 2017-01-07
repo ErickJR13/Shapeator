@@ -20,4 +20,4 @@ Currently, Circle, Triangle, Square, Rectangle, Parallelogram, Trapezoid, Ellips
 * Program might return code 0 when there is not a valid option while choosing a function. 
 
 
-#[Go back to Main Page](https://erickjreyes.me)
+# [Go back to Main Page](https://erickjreyes.me)
