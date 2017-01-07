@@ -82,12 +82,60 @@ def rectlength (area, width):
 
     print "The length is ", lengthrounded
 
+def rectwidth (area, length):
+
+    width = area/length
+
+    widthrounded = round(width, 2)
+
+    print "The width is ", widthrounded
+
+def rectdiagonal (length, width):
+
+    diagonal = math.sqrt((width*width)+ (length * length))
+
+    diagonalrounded = round (diagonal, 2)
+
+    print "The diagonal length of this rectangle is ", diagonalrounded
+
+def rectperimeter (length, width):
+
+    perimeter = 2*(length + width)
+
+    perimeterrounded = round (perimeter, 2)
+
+    print "The perimeter is ", perimeterrounded
+
+def squarearea (side):
+
+    area = side * side
+
+    arearounded = round(area, 2)
+
+    print "The area of this sqaure is ", arearounded
+
+def squareperimeter (side):
+
+    perimeter = 4 * side
+
+    perimeterrounded = round(perimeter, 2)
+
+    print "The perimeter is ", perimeterrounded
+
+def squarediagonal (side):
+
+    diagonal = math.sqrt(2) * side
+
+    diagonalrounded = round(diagonal, 2)
+
+    print "The diagonal is ", diagonalrounded
 
 
 
-shape = raw_input("What's the shape you working with? (Enter C for circle, T for Triangle, or R for rectangle) \n")
 
-if shape == "circle":
+shape = raw_input("What's the shape you working with? (Enter C for circle, T for Triangle, S for Sqaure, or R for rectangle) \n")
+
+if shape == "c" or "C":
 
     function = raw_input("What are you trying to figure out? (Radius, Area, Circumference) \n")
 
@@ -112,9 +160,8 @@ if shape == "circle":
 
         print "Not a valid response"
 
-
-if shape == "T":
-    function = raw_input("What are you trying to figure out? (Base, Height , Area, Circumference) \n")
+if shape == "T" or "t":
+    function = raw_input("What are you trying to figure out about the triangle? (Base, Height , Area, Perimeter) \n")
 
     if function == "area":
 
@@ -126,17 +173,110 @@ if shape == "T":
         trianglearea(base, height)
 
 
-    elif function == "Height":
+    elif function == "base":
 
-        a = float(raw_input("I need the area! What's the area?"))
-        circleradius(a)
+        a = float(raw_input("I need the area and the height! What's the area? \n"))
 
-    elif function == "circumference":
+        h = float(raw_input("And the Height? \n"))
 
-        radius = float(raw_input("Gotcha. What is the radius?"))
+        print "Thank you."
 
-        circlecircumference(radius)
+        time.sleep(2)
+
+        trianglebase(a, h)
+
+
+    elif function == "height":
+
+        area = float(raw_input("Gotcha. What is the area? \n"))
+
+        base = float(raw_input("And the base? \n"))
+
+        print "Calculating..."
+
+        time.sleep(3)
+
+        triangleheight(area, base)
+
+    elif function = "perimeter":
+
+        sidea = float(raw_input("Ah perimeter. For this I would need three things. 2 sides (A and C), and the base. Let's start with Side A, what is it?" \n))
+
+        base = float(raw_input("And the base?" \n))
+
+        sidec = float(raw_input("Last but not least, what's side C?"))
+
+        print "Thank you! On it..."
+
+        time.sleep(3)
+
+        triangleperimeter(sidea, base, sidec)
 
     else:
 
-        print "Not a valid response"
+        print "Not a valid response."
+
+if shape == "R" or "r":
+
+    function = raw_input("Rectangle it is! What are you looking to calculate? (Area, length, width, diagonal, perimeter) \n")
+
+    if function == "area" or "Area":
+
+        print "Area huh? \n"
+
+        length = float(raw_input("I will need the length and the width to calculate it. Let's start with the base. What's the base? \n"))
+
+        width = float(raw_input("Now enter the width: \n"))
+
+        print "Got it!"
+
+        time.sleep(3)
+
+        rectarea(length, width)
+
+    if function "length" or "Length":
+
+        area = float(raw_input("For the length, I need to things. The area, and the width. What's the area? \n"))
+
+        width = float(raw_input("Got it. And the width? \n"))
+
+        print "....."
+
+        time.sleep(3)
+
+        rectlength(area, width)
+
+    if function = "width" or "Width":
+
+        area = float(raw_input("For the area, I will need the area and the length of the Rectangle. Enter the area. \n"))
+
+        length = float(raw_input("Now the length: \n"))
+
+        print "On it!"
+
+        time.sleep(3)
+
+        rectwidth(area, length)
+
+    if function == "Diagonal" or "diagonal":
+
+        length = float(raw_input("Ah, diagonal. Okay. I would need the length and width. Give me the length first: \n"))
+
+        width = float(raw_input("Now the width: \n"))
+
+        print "On it!"
+
+        time.sleep(3)
+
+        rectdiagonal(length, width)
+
+    if function == "Perimeter" or "perimeter":
+        length = float(raw_input("Perimeter. Okay. I would need the length and width. Give me the length first: \n"))
+
+        width = float(raw_input("Now the width: \n"))
+
+        print "On it!"
+
+        time.sleep(3)
+
+        rectperimeter(length, width)
