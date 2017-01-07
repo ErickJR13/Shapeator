@@ -131,8 +131,6 @@ def squarediagonal (side):
     print "The diagonal is ", diagonalrounded
 
 
-
-
 shape = raw_input("What's the shape you working with? (Enter C for circle, T for Triangle, S for Sqaure, or R for rectangle) \n")
 
 if shape == "c" or "C":
@@ -280,3 +278,38 @@ if shape == "R" or "r":
         time.sleep(3)
 
         rectperimeter(length, width)
+
+if shape == "S" or "s":
+
+    function = raw_input("Rectangle it is! What are you looking to calculate? (Area, Perimeter, Diagonal) \n")
+
+    if function == "area" or "Area":
+        print "Area huh? \n"
+
+        side = float(raw_input("I will need to know the side of the square. What is it? \n"))
+
+        print "Got it. Working..."
+
+        time.sleep(3)
+
+        squarearea(side)
+
+    if function "perimeter" or "Perimeter":
+
+        side = float(raw_input("For the perimeter, I only need the side. What is the side? \n"))
+
+        print "....."
+
+        time.sleep(3)
+
+        squareperimeter(side)
+
+    if function = "diagonal" or "Diagonal":
+
+        side = float(raw_input("For the diagonal, I only need to know the side. What is the side? \n"))
+
+        print "Working..."
+
+        time.sleep(3)
+
+        squarediagonal(side)
