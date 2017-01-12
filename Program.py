@@ -7,10 +7,6 @@ print "Hey! Welcome to Shapeator. I can help you find out the values of Shapes (
 
 print "Be advised that this program will loop until closed. \n "
 
-print "Be advised that this program will loop until closed. \n"
-
-
-
 def circlearea(radius):
 
 
