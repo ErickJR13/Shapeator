@@ -4,7 +4,11 @@ time.sleep(0.5)
 
 print "Hey! Welcome to Shapeator. I can help you find out the values of Shapes (area, height, etc). \n "
 
+
 print "Be advised that this program will loop until closed. \n "
+
+print "Be advised that this program will loop until closed. \n"
+
 
 
 def circlearea(radius):
