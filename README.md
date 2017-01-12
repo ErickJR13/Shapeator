@@ -10,7 +10,7 @@ Currently, Circle, Triangle, Square, Rectangle, Parallelogram, Trapezoid, Ellips
 
 # How do I run it?
 
-1. Go to [repl.it](https://repl.it/FDFZ/2) and press the Run button right above the code and terminal. 
+1. Go to [repl.it](https://repl.it/FDFZ/3) and press the Run button right above the code and terminal. 
 2. Follow the Instruction!
 
 # Known Bugs
