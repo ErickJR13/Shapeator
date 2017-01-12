@@ -2,7 +2,9 @@ import time, math
 
 time.sleep(0.5)
 
-print "Hey! Welcome to Shapeator. I can help you find out the values of Shapes (area, height, etc). Be advised that this program will loop until closed."
+print "Hey! Welcome to Shapeator. I can help you find out the values of Shapes (area, height, etc). \n "
+
+print "Be advised that this program will loop until closed. \n "
 
 
 def circlearea(radius):
@@ -131,6 +133,8 @@ def squarediagonal (side):
     print "The diagonal is ", diagonalrounded
 
 
+# Main function
+
 shape = raw_input("What's the shape you working with? (Enter C for circle, T for Triangle, S for Sqaure, or R for rectangle) \n")
 
 if shape == "c" or "C":
@@ -158,7 +162,7 @@ if shape == "c" or "C":
 
         print "Not a valid response"
 
-if shape == "T" or "t":
+elif shape == "T" or "t":
     function = raw_input("What are you trying to figure out about the triangle? (Base, Height , Area, Perimeter) \n")
 
     if function == "area":
@@ -214,7 +218,7 @@ if shape == "T" or "t":
 
         print "Not a valid response."
 
-if shape == "R" or "r":
+elif shape == "R" or "r":
 
     function = raw_input("Rectangle it is! What are you looking to calculate? (Area, length, width, diagonal, perimeter) \n")
 
@@ -279,7 +283,7 @@ if shape == "R" or "r":
 
         rectperimeter(length, width)
 
-if shape == "S" or "s":
+elif shape == "S" or "s":
 
     function = raw_input("Rectangle it is! What are you looking to calculate? (Area, Perimeter, Diagonal) \n")
 
@@ -313,3 +317,6 @@ if shape == "S" or "s":
         time.sleep(3)
 
         squarediagonal(side)
+
+else:
+    print "Shape not supported yet. Keep an eye for Shapeator's Github repo for updates!"
