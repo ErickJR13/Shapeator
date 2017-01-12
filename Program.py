@@ -2,10 +2,8 @@ import time, math
 
 time.sleep(0.5)
 
-print "Hey! Welcome to Shapeator. I can help you find out the values of Shapes (area, height, etc). \n "
+print "Hey! Welcome to Shapeator. I can help you find out the values of Shapes (area, height, etc). Be advised that this program will loop until closed."
 
-
-print "Be advised that this program will loop until closed. \n "
 
 def circlearea(radius):
 
@@ -137,7 +135,9 @@ def squarediagonal (side):
 
 shape = raw_input("What's the shape you working with? (Enter C for circle, T for Triangle, S for Sqaure, or R for rectangle) \n")
 
-if shape == "c" or "C":
+
+
+if shape == "c" or shape == "C":
 
     function = raw_input("What are you trying to figure out? (Radius, Area, Circumference) \n")
 
@@ -162,7 +162,8 @@ if shape == "c" or "C":
 
         print "Not a valid response"
 
-elif shape == "T" or "t":
+elif shape == "T" or shape == "t":
+
     function = raw_input("What are you trying to figure out about the triangle? (Base, Height , Area, Perimeter) \n")
 
     if function == "area":
@@ -218,7 +219,7 @@ elif shape == "T" or "t":
 
         print "Not a valid response."
 
-elif shape == "R" or "r":
+elif shape == "R" or shape == "r":
 
     function = raw_input("Rectangle it is! What are you looking to calculate? (Area, length, width, diagonal, perimeter) \n")
 
@@ -283,7 +284,7 @@ elif shape == "R" or "r":
 
         rectperimeter(length, width)
 
-elif shape == "S" or "s":
+elif shape == "S" or shape == "s":
 
     function = raw_input("Rectangle it is! What are you looking to calculate? (Area, Perimeter, Diagonal) \n")
 
