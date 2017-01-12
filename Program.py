@@ -196,15 +196,15 @@ if shape == "T" or "t":
 
         triangleheight(area, base)
 
-    elif function = "perimeter":
+    elif function == "perimeter":
 
-        sidea = float(raw_input("Ah perimeter. For this I would need three things. 2 sides (A and C), and the base. Let's start with Side A, what is it?" \n))
+        sidea = float(raw_input("Ah perimeter. For this I would need three things. 2 sides (A and C), and the base. Let's start with Side A, what is it? \n"))
 
-        base = float(raw_input("And the base?" \n))
+        base = float(raw_input("And the base? \n"))
 
-        sidec = float(raw_input("Last but not least, what's side C?"))
+        sidec = float(raw_input("Last but not least, what's side C? \n"))
 
-        print "Thank you! On it..."
+        print "Thank you! On it... \n"
 
         time.sleep(3)
 
@@ -232,7 +232,7 @@ if shape == "R" or "r":
 
         rectarea(length, width)
 
-    if function "length" or "Length":
+    if function == "length" or "Length":
 
         area = float(raw_input("For the length, I need to things. The area, and the width. What's the area? \n"))
 
@@ -244,7 +244,7 @@ if shape == "R" or "r":
 
         rectlength(area, width)
 
-    if function = "width" or "Width":
+    if function == "width" or "Width":
 
         area = float(raw_input("For the area, I will need the area and the length of the Rectangle. Enter the area. \n"))
 
@@ -294,7 +294,7 @@ if shape == "S" or "s":
 
         squarearea(side)
 
-    if function "perimeter" or "Perimeter":
+    if function == "perimeter" or "Perimeter":
 
         side = float(raw_input("For the perimeter, I only need the side. What is the side? \n"))
 
@@ -304,7 +304,7 @@ if shape == "S" or "s":
 
         squareperimeter(side)
 
-    if function = "diagonal" or "Diagonal":
+    if function == "diagonal" or "Diagonal":
 
         side = float(raw_input("For the diagonal, I only need to know the side. What is the side? \n"))
 
