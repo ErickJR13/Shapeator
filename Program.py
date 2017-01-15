@@ -223,7 +223,7 @@ elif shape == "R" or shape == "r":
 
     function = raw_input("Rectangle it is! What are you looking to calculate? (Area, length, width, diagonal, perimeter) \n")
 
-    if function == "area" or "Area":
+    if function == "area":
 
         print "Area huh? \n"
 
@@ -237,7 +237,7 @@ elif shape == "R" or shape == "r":
 
         rectarea(length, width)
 
-    if function == "length" or "Length":
+    if function == "length":
 
         area = float(raw_input("For the length, I need to things. The area, and the width. What's the area? \n"))
 
@@ -249,7 +249,7 @@ elif shape == "R" or shape == "r":
 
         rectlength(area, width)
 
-    if function == "width" or "Width":
+    if function == "width":
 
         area = float(raw_input("For the area, I will need the area and the length of the Rectangle. Enter the area. \n"))
 
@@ -261,7 +261,7 @@ elif shape == "R" or shape == "r":
 
         rectwidth(area, length)
 
-    if function == "Diagonal" or "diagonal":
+    if function == "diagonal":
 
         length = float(raw_input("Ah, diagonal. Okay. I would need the length and width. Give me the length first: \n"))
 
@@ -273,7 +273,8 @@ elif shape == "R" or shape == "r":
 
         rectdiagonal(length, width)
 
-    if function == "Perimeter" or "perimeter":
+    if function == "perimeter":
+
         length = float(raw_input("Perimeter. Okay. I would need the length and width. Give me the length first: \n"))
 
         width = float(raw_input("Now the width: \n"))
@@ -288,7 +289,7 @@ elif shape == "S" or shape == "s":
 
     function = raw_input("Rectangle it is! What are you looking to calculate? (Area, Perimeter, Diagonal) \n")
 
-    if function == "area" or "Area":
+    if function == "area":
         print "Area huh? \n"
 
         side = float(raw_input("I will need to know the side of the square. What is it? \n"))
@@ -299,7 +300,7 @@ elif shape == "S" or shape == "s":
 
         squarearea(side)
 
-    if function == "perimeter" or "Perimeter":
+    if function == "perimeter":
 
         side = float(raw_input("For the perimeter, I only need the side. What is the side? \n"))
 
@@ -309,7 +310,7 @@ elif shape == "S" or shape == "s":
 
         squareperimeter(side)
 
-    if function == "diagonal" or "Diagonal":
+    if function == "diagonal":
 
         side = float(raw_input("For the diagonal, I only need to know the side. What is the side? \n"))
 
