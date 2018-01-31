@@ -13,7 +13,7 @@ Circle, Triangle, Square, Rectangle. More to come soon.
 1. Go to [repl.it](https://repl.it/FDFZ/3) and press the Run button right above the code and terminal. 
 2. Follow the Instructions!
 
-# Known Bugs
+# Known Bugs/Issues
 
 * Program won't loop to keep the program running. 
 * There isn't a way to go back if you didn't mean to choose an item
