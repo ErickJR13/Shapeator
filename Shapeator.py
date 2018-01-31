@@ -1,3 +1,7 @@
+//  Created by Erick Jean Reyes on 01/07/17.
+//  Copyright © 2017 Erick Jean Reyes. All rights reserved.
+//
+
 import time, math
 
 time.sleep(0.5)
