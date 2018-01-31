@@ -19,7 +19,7 @@ Circle, Triangle, Square, Rectangle. More to come soon.
 * There isn't a way to go back if you didn't mean to choose an item
 * Program might return code 0 when there is not a valid option while choosing a function. 
 
-*Written in Python*
+*Written in Python. Source code available by pressing the "View on Github" button above*
 
 
 [Go back to Main Page](https://erickjr.me)
